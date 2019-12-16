@@ -40,7 +40,11 @@ FROM Projects
 JOIN Pledges
 ON Projects.id = Pledges.project_id
 GROUP BY Projects.title
+<<<<<<< HEAD
 HAVING SUM(Pledges.amount) >= Projects.funding_goal;
+=======
+HAVING amount >= 0;
+>>>>>>> 677958f7aecd4a10420e3d490729c09e3041046e
 "
 end
 
